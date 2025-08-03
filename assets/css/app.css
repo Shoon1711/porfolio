@@ -1,0 +1,399 @@
+/* COMMON STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bgColor: #f0f9ff;
+    --mainColor: oklch(65.6% 0.241 354.308);
+    --secondColor: #fff;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+#hero , #about , #skill , #service , #contact , #footer {
+    padding: 30px 0px;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+/* NAVIGATION LINK STYLES */
+#nav {
+    background-color: var(--mainColor);
+}
+
+#nav .nav-bar{
+}
+
+#nav .nav-bar .nav-link{
+    /* display: flex; */
+}
+
+#nav .nav-bar .nav-link .nav-link-item{
+}
+
+#nav .nav-bar .nav-link .nav-link-item a{
+    list-style-type: none;
+     
+}
+
+
+/* HERO STYLES */
+#hero .container {
+    display: flex;
+    height: 350px;
+    align-items: center;
+    background-color: var(--mainColor);
+    border: 4px solid var(--secondColor);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: #000;
+}
+
+#hero .container .content{
+    width: 60%;
+    text-align: center;
+    color: var(--secondColor);
+    padding: 0px 10px;
+}
+
+#hero .container .img-wrapper{
+    width: 40%;
+    height: 100%;
+}
+
+#hero .container .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 15%;
+}
+
+#hero .container .content h3, h1, p{
+    margin-bottom: 22px;
+}
+
+#hero .container .content .social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ABOUT STYLES */
+
+#about .container{
+    display: flex;
+    gap: 15px;
+    padding: 0px 15px;
+}
+
+#about .container > div{
+    width: 100%;
+}
+
+
+#about .container .img-div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 100% 10%;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 2px 5px gray;
+}
+
+
+/* SKILL STYLES */
+
+#skill .container{
+    display: flex;
+    align-items: center;
+}
+
+#skill .container > div{
+    width: 50%;
+}
+
+#skill .container .content .skill-list{
+    list-style: none;
+    margin-bottom: 20px;
+}
+#skill .container .content .skill-list .skill-item{
+    margin: 5px;
+    padding: 10px 5px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#skill .container .img-div img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+
+/* SERVICE STYLES */
+
+#service .container {
+    display: flex;    
+    gap: 28px;
+}
+
+#service .container > div{
+    flex-basis: 33.3%;
+}
+
+#service .container .card-wrapper{
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+#service .container .card-wrapper:hover {
+    transform: scale(1.1);
+    background-color: var(--mainColor);
+}
+
+#service .container .card-wrapper .card svg,h3,p{
+    margin-bottom: 12px;
+}
+
+#service .container .card-wrapper .card {
+    text-align: center;
+    color: var(--secondColor);
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+/* CONTACT STYLES */
+
+#contact .container {
+    display: flex;
+}
+
+#contact .container > div{
+    flex-basis: 50%;
+}
+
+#contact .container .content .contact-list .contact-list-item{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact .container .form-wrapper .input-wrapper{
+    margin-bottom: 8px;
+    display: flex;
+    gap: 9px;
+}
+
+#contact  .input{
+    border: 1px solid  gray;
+    padding: 10px 6px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+#contact .input-wrapper textarea{
+    border: 1px solid gray;
+    padding: 10px 6px;
+    border-radius: 5px;
+    width: 100%;
+    height: 80px;
+}
+
+#contact .btn-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#contact .btn{
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    color: var(--secondColor);
+}
+/* FOOTER STYLES */
+
+#footer {
+    background-color: var(--mainColor);
+    padding: 50px 0;
+}
+
+#footer .container .link-list{
+    list-style: none;
+}
+
+#footer .container .link-list .link-list-item {
+    margin-bottom: 5px;
+}
+#footer .container .link-list .link-list-item a{
+    text-decoration: none;
+    color: var(--secondColor);
+}
+
+#footer .container{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#footer .container > div{
+    width: 33.33%;
+    text-align: center;
+    color: var(--secondColor);
+}
+
+#footer .container .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+#footer .container .footer-header{
+    margin-bottom: 20px;
+    font-size: 21.5px;
+    font-weight: bold;
+}
+
+/* GO TO TOP  */   
+
+.go-to-top {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.go-to-top svg{
+    width: 60px;
+    color: var();
+}
+
+/* Responsive Design */
+
+/* LARGE SIZE */
+@media all and (max-width: 102p9x){
+    .container{
+    width: 90%;
+    }
+}
+
+/* MEDIUM SIZE */
+@media all and (max-width: 1024px){
+    .container{
+        width: 70%;
+    }
+}
+
+/* SMALL SIZE */
+@media all and (max-width: 767px) {
+
+    /* COMMON STYLES */
+    .container{
+        width: 100%;
+    }
+
+    /* HERO STYLES */
+    #hero .container{
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    #hero .container .content{
+        order: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+    }
+
+    #hero .container .img-wrapper{
+        height: 62%;
+        width: 100%;
+    }
+    #hero .container .img-wrapper img{
+        width: 100%;
+        order: 1;
+    }
+
+    #hero .container .content h3, h1, p{
+        margin-bottom: 5px;
+        font-size: 17px;
+    }
+
+    /* ABOUT STYLES */
+    #about .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* SKILL STYLES */
+    #skill .container{
+        flex-direction: column;
+        padding: 0px 15px;
+    }
+    
+    #skill .container > div{
+        width: 100%;
+    }
+
+    /* SERVICE STYLES */
+    #service .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* CONTACT STYLES */
+    #contact .container {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0px 15px;
+
+    }
+
+    /* FOOTER STYLES */
+    #footer .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #footer .container > div{
+        width: 100%;
+    }
+}
+
